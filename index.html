@@ -1,0 +1,390 @@
+<!-- HTML 
+
+HyperText
+    Hiper texto
+    Links
+Markup
+    Tags - Marcação de texto
+Language
+    maneira de escrever
+     -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoctorCare</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <script src="main.js" defer></script>
+    <!-- ScrollReaveal Lib -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body>
+    <nav id="navigation" class="">
+        <div class="wrapper">
+
+            <a onclick="fecharMenu()" class="logo" href="#">
+                <img src="https://hcapanama.com/site/assets/files/1139/logo-dc-nuevo-bold-chitre.png" alt="LOGO">
+            </a>
+
+            <div class="menu">
+                <ul>
+                    <li><a onclick="fecharMenu()" href="#home">Início</a></li>
+
+                    <li><a onclick="fecharMenu()" href="#services">Serviços</a></li>
+
+                    <li><a onclick="fecharMenu()" href="#about">Sobre</a></li>
+                </ul>
+
+                <a onclick="fecharMenu()" class="button" href="#contact">Agende sua consulta</a>
+
+                <ul class="social-links">
+                    <li>
+                        <a href="https:/facebook.com" target="_blank"><svg fill="#ffffff"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                                <path
+                                    d="M 12 2 C 6.4889971 2 2 6.4889971 2 12 C 2 17.511003 6.4889971 22 12 22 C 17.511003 22 22 17.511003 22 12 C 22 6.4889971 17.511003 2 12 2 z M 12 4 C 16.430123 4 20 7.5698774 20 12 C 20 16.014467 17.065322 19.313017 13.21875 19.898438 L 13.21875 14.384766 L 15.546875 14.384766 L 15.912109 12.019531 L 13.21875 12.019531 L 13.21875 10.726562 C 13.21875 9.7435625 13.538984 8.8710938 14.458984 8.8710938 L 15.935547 8.8710938 L 15.935547 6.8066406 C 15.675547 6.7716406 15.126844 6.6953125 14.089844 6.6953125 C 11.923844 6.6953125 10.654297 7.8393125 10.654297 10.445312 L 10.654297 12.019531 L 8.4277344 12.019531 L 8.4277344 14.384766 L 10.654297 14.384766 L 10.654297 19.878906 C 6.8702905 19.240845 4 15.970237 4 12 C 4 7.5698774 7.5698774 4 12 4 z" />
+                            </svg></a>
+                    </li>
+                    <li>
+                        <a href="https:/instagram.com" target="_blank">
+                            <?xml version="1.0"?><svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" width="24px" height="24px">
+                                <path
+                                    d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https:/youtube.com" target="_blank"><svg fill="#ffffff"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="24px" height="24px">
+                                <path
+                                    d="M 24.402344 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.402344 16.898438 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.902344 40.5 17.898438 41 24.5 41 C 31.101563 41 37.097656 40.5 40.597656 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.097656 35.5 C 45.5 33 46 29.402344 46.097656 24.902344 C 46.097656 20.402344 45.597656 16.800781 45.097656 14.300781 C 44.699219 12.101563 42.800781 10.5 40.597656 10 C 37.097656 9.5 31 9 24.402344 9 Z M 24.402344 11 C 31.601563 11 37.398438 11.597656 40.199219 12.097656 C 41.699219 12.5 42.898438 13.5 43.097656 14.800781 C 43.699219 18 44.097656 21.402344 44.097656 24.902344 C 44 29.199219 43.5 32.699219 43.097656 35.199219 C 42.800781 37.097656 40.800781 37.699219 40.199219 37.902344 C 36.597656 38.601563 30.597656 39.097656 24.597656 39.097656 C 18.597656 39.097656 12.5 38.699219 9 37.902344 C 7.5 37.5 6.300781 36.5 6.101563 35.199219 C 5.300781 32.398438 5 28.699219 5 25 C 5 20.398438 5.402344 17 5.800781 14.902344 C 6.101563 13 8.199219 12.398438 8.699219 12.199219 C 12 11.5 18.101563 11 24.402344 11 Z M 19 17 L 19 33 L 33 25 Z M 21 20.402344 L 29 25 L 21 29.597656 Z" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+
+            <button onclick="abrirmenu()" class="open-menu">
+                <a class="svg" href="#">
+                    <svg fill="var(--primary-color)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40px"
+                        height="40px">
+                        <path
+                            d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z" />
+                    </svg>
+                </a>
+            </button>
+
+            <button onclick="fecharMenu()" class="close close-menu">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <polygon fill="var(--ci-primary-color, currentColor)"
+                        points="427.314 107.313 404.686 84.687 256 233.373 107.314 84.687 84.686 107.313 233.373 256 84.686 404.687 107.314 427.313 256 278.627 404.686 427.313 427.314 404.687 278.627 256 427.314 107.313"
+                        class="ci-primary" />
+                </svg>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+    <section id="home">
+
+        <div class="wrapper">
+
+            <div class="col-a">
+
+                <header>
+                    <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
+
+                    <h1>Assitência médica simplificada para todos</h1>
+                </header>
+
+                <div class="content">
+                    <p>Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e
+                        proporcionar uma cura a longo prazo.</p>
+
+                    <a class="button" href="#contact">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="20px" height="20px">
+                            <path fill="#f2faff"
+                                d="M4.221,29.298l-0.104-0.181c-1.608-2.786-2.459-5.969-2.458-9.205 C1.663,9.76,9.926,1.5,20.078,1.5c4.926,0.002,9.553,1.919,13.03,5.399c3.477,3.48,5.392,8.107,5.392,13.028 c-0.005,10.153-8.268,18.414-18.42,18.414c-3.082-0.002-6.126-0.776-8.811-2.24l-0.174-0.096l-9.385,2.46L4.221,29.298z" />
+                            <path fill="#788b9c"
+                                d="M20.078,2L20.078,2c4.791,0.001,9.293,1.867,12.676,5.253C36.137,10.639,38,15.14,38,19.927 c-0.005,9.878-8.043,17.914-17.927,17.914c-2.991-0.001-5.952-0.755-8.564-2.18l-0.349-0.19l-0.384,0.101l-8.354,2.19 l2.226-8.131l0.11-0.403L4.55,28.867c-1.566-2.711-2.393-5.808-2.391-8.955C2.163,10.036,10.202,2,20.078,2 M20.078,1 C9.651,1,1.163,9.485,1.158,19.912c-0.002,3.333,0.869,6.588,2.525,9.455L1,39.169l10.03-2.63c2.763,1.507,5.875,2.3,9.042,2.302 h0.008c10.427,0,18.915-8.485,18.92-18.914c0-5.054-1.966-9.807-5.538-13.382C29.89,2.971,25.14,1.002,20.078,1L20.078,1z" />
+                            <path fill="#79ba7e"
+                                d="M19.995,35c-2.504-0.001-4.982-0.632-7.166-1.823l-1.433-0.782l-1.579,0.414l-3.241,0.85l0.83-3.03	l0.453-1.656L7,27.485c-1.309-2.267-2.001-4.858-2-7.492C5.004,11.726,11.732,5.001,19.998,5c4.011,0.001,7.779,1.563,10.61,4.397	C33.441,12.231,35,15.999,35,20.005C34.996,28.273,28.268,35,19.995,35z" />
+                            <path fill="#fff"
+                                d="M28.28,23.688c-0.45-0.224-2.66-1.313-3.071-1.462c-0.413-0.151-0.712-0.224-1.012,0.224	c-0.3,0.45-1.161,1.462-1.423,1.761c-0.262,0.3-0.524,0.337-0.974,0.113c-0.45-0.224-1.899-0.7-3.615-2.231	c-1.337-1.191-2.239-2.663-2.501-3.113c-0.262-0.45-0.029-0.693,0.197-0.917c0.202-0.202,0.45-0.525,0.674-0.787	c0.224-0.262,0.3-0.45,0.45-0.75c0.151-0.3,0.075-0.563-0.038-0.787c-0.113-0.224-1.012-2.437-1.387-3.336	c-0.364-0.876-0.736-0.757-1.012-0.771c-0.262-0.014-0.562-0.015-0.861-0.015c-0.3,0-0.787,0.113-1.198,0.563	c-0.411,0.45-1.573,1.537-1.573,3.749s1.611,4.35,1.835,4.649c0.224,0.3,3.169,4.839,7.68,6.786	c1.072,0.462,1.911,0.739,2.562,0.947c1.076,0.342,2.057,0.294,2.832,0.178c0.864-0.129,2.66-1.087,3.034-2.136	c0.375-1.049,0.375-1.95,0.262-2.136C29.03,24.025,28.731,23.912,28.28,23.688z" />
+                        </svg>
+
+                        Agende sua consulta
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-b">
+
+                <img src="IMG/medicina.trabalho.png" alt="foto ilustrativa de uma médica">
+
+            </div>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <h3>+3.500</h3>
+                    <p>Pacientes atendidos</p>
+                </div>
+
+                <div class="stat">
+                    <h3>+15</h3>
+                    <p>Especialistas disponíveis</p>
+                </div>
+                <div class="stat">
+                    <h3>+10</h3>
+                    <p>Anos do mercado</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="services">
+        <div class="wrapper">
+
+            <header>
+                <h4>Serviços</h4>
+                <h2>Como podemos ajudá-la a se sentir melhor?</h2>
+            </header>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                        <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <h3>Problemas digestivos</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.Velit officia consequat
+                        duis enim
+                    </p>
+
+                </div>
+
+                <div class="card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                        <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <h3>Saúde Hormonal</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.Velit officia consequat
+                        duis enim
+                    </p>
+                </div>
+
+                <div class="card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                        <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <h3>Bem-estar mental</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.Velit officia consequat
+                        duis enim
+                    </p>
+                </div>
+
+                <div class="card">
+
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                        <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <h3>Cuidados Pediátricos</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.Velit officia consequat
+                        duis enim
+                    </p>
+
+                </div>
+
+                <div class="card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                        <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <h3>Autoimune e Inflamação</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.Velit officia consequat
+                        duis enim
+                    </p>
+                </div>
+
+                <div class="card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                        <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <h3>Saúde do Coração</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.Velit officia consequat
+                        duis enim
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="wrapper">
+            <div class="col-a">
+                <header>
+                    <h4>Sobre Nós</h4>
+                    <h2>Entenda quem somos e por que existimos</h2>
+                </header>
+
+                <div class="content">
+                    <p>
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint Velit officia consequat
+                        duis enim.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint Velit officia
+                        consequat duis enim.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint
+                        Velit officia consequat duis enim.Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                        amet sint Velit officia consequat duis enim.Amet minim mollit non deserunt ullamco est sit
+                        aliqua dolor do amet sint.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="col-b">
+                <img src="IMG/happy-doctor-holding-clipboard-with-patients.jpg"
+                    alt="Doutor feliz segurando uma prancheta com seus clientes">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="wrapper">
+
+            <div class="col-a">
+                <header>
+                    <h2>Entre em contato com a gente</h2>
+                </header>
+
+                <div class="content">
+                    <ul>
+                        <li>
+                            <img src="IMG/localizacao.png" alt="Localização">
+
+                            R. Amauri Souza, 346
+                        </li>
+                        <li>
+
+                            <img src="IMG/email.png" alt="Mensagem">
+                            contato@doctorcare.com
+                        </li>
+                    </ul>
+
+                    <a class="button" href="https://wa.me/5532999922174" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="20px" height="20px">
+                            <path fill="#f2faff"
+                                d="M4.221,29.298l-0.104-0.181c-1.608-2.786-2.459-5.969-2.458-9.205 C1.663,9.76,9.926,1.5,20.078,1.5c4.926,0.002,9.553,1.919,13.03,5.399c3.477,3.48,5.392,8.107,5.392,13.028 c-0.005,10.153-8.268,18.414-18.42,18.414c-3.082-0.002-6.126-0.776-8.811-2.24l-0.174-0.096l-9.385,2.46L4.221,29.298z" />
+                            <path fill="#788b9c"
+                                d="M20.078,2L20.078,2c4.791,0.001,9.293,1.867,12.676,5.253C36.137,10.639,38,15.14,38,19.927 c-0.005,9.878-8.043,17.914-17.927,17.914c-2.991-0.001-5.952-0.755-8.564-2.18l-0.349-0.19l-0.384,0.101l-8.354,2.19 l2.226-8.131l0.11-0.403L4.55,28.867c-1.566-2.711-2.393-5.808-2.391-8.955C2.163,10.036,10.202,2,20.078,2 M20.078,1 C9.651,1,1.163,9.485,1.158,19.912c-0.002,3.333,0.869,6.588,2.525,9.455L1,39.169l10.03-2.63c2.763,1.507,5.875,2.3,9.042,2.302 h0.008c10.427,0,18.915-8.485,18.92-18.914c0-5.054-1.966-9.807-5.538-13.382C29.89,2.971,25.14,1.002,20.078,1L20.078,1z" />
+                            <path fill="#79ba7e"
+                                d="M19.995,35c-2.504-0.001-4.982-0.632-7.166-1.823l-1.433-0.782l-1.579,0.414l-3.241,0.85l0.83-3.03	l0.453-1.656L7,27.485c-1.309-2.267-2.001-4.858-2-7.492C5.004,11.726,11.732,5.001,19.998,5c4.011,0.001,7.779,1.563,10.61,4.397	C33.441,12.231,35,15.999,35,20.005C34.996,28.273,28.268,35,19.995,35z" />
+                            <path fill="#fff"
+                                d="M28.28,23.688c-0.45-0.224-2.66-1.313-3.071-1.462c-0.413-0.151-0.712-0.224-1.012,0.224	c-0.3,0.45-1.161,1.462-1.423,1.761c-0.262,0.3-0.524,0.337-0.974,0.113c-0.45-0.224-1.899-0.7-3.615-2.231	c-1.337-1.191-2.239-2.663-2.501-3.113c-0.262-0.45-0.029-0.693,0.197-0.917c0.202-0.202,0.45-0.525,0.674-0.787	c0.224-0.262,0.3-0.45,0.45-0.75c0.151-0.3,0.075-0.563-0.038-0.787c-0.113-0.224-1.012-2.437-1.387-3.336	c-0.364-0.876-0.736-0.757-1.012-0.771c-0.262-0.014-0.562-0.015-0.861-0.015c-0.3,0-0.787,0.113-1.198,0.563	c-0.411,0.45-1.573,1.537-1.573,3.749s1.611,4.35,1.835,4.649c0.224,0.3,3.169,4.839,7.68,6.786	c1.072,0.462,1.911,0.739,2.562,0.947c1.076,0.342,2.057,0.294,2.832,0.178c0.864-0.129,2.66-1.087,3.034-2.136	c0.375-1.049,0.375-1.95,0.262-2.136C29.03,24.025,28.731,23.912,28.28,23.688z" />
+                        </svg>
+                        Agende sua consulta</a>
+
+                </div>
+            </div>
+            <div class="col-b">
+                <img src="IMG/homem-negro-sorridente-segurando-o-telefone-celular-enquanto-esta-sentado-em-um-cafe-usando-o-laptop.jpg"
+                    alt="homem negro sorridente segurando o telefone celular tomando cafe com seu laptop na mesa">
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+
+            <div class="col-a">
+
+                <a onclick="fecharMenu()" class="logo" href="#">
+                    <img src="https://hcapanama.com/site/assets/files/1139/logo-dc-nuevo-bold-chitre.png" alt="LOGO">
+                </a>
+
+                <p>
+                    ©2022 DoctorCare. <br>
+                    Todos os direitos reservados.
+                </p>
+
+            </div>
+
+            <div class="col-b">
+                <ul class="social-links">
+                    <li>
+                        <a href="https:/facebook.com" target="_blank"><svg fill="#ffffff"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                                <path
+                                    d="M 12 2 C 6.4889971 2 2 6.4889971 2 12 C 2 17.511003 6.4889971 22 12 22 C 17.511003 22 22 17.511003 22 12 C 22 6.4889971 17.511003 2 12 2 z M 12 4 C 16.430123 4 20 7.5698774 20 12 C 20 16.014467 17.065322 19.313017 13.21875 19.898438 L 13.21875 14.384766 L 15.546875 14.384766 L 15.912109 12.019531 L 13.21875 12.019531 L 13.21875 10.726562 C 13.21875 9.7435625 13.538984 8.8710938 14.458984 8.8710938 L 15.935547 8.8710938 L 15.935547 6.8066406 C 15.675547 6.7716406 15.126844 6.6953125 14.089844 6.6953125 C 11.923844 6.6953125 10.654297 7.8393125 10.654297 10.445312 L 10.654297 12.019531 L 8.4277344 12.019531 L 8.4277344 14.384766 L 10.654297 14.384766 L 10.654297 19.878906 C 6.8702905 19.240845 4 15.970237 4 12 C 4 7.5698774 7.5698774 4 12 4 z" />
+                            </svg></a>
+                    </li>
+                    <li>
+                        <a href="https:/instagram.com" target="_blank">
+                            <?xml version="1.0"?><svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" width="24px" height="24px">
+                                <path
+                                    d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https:/youtube.com" target="_blank"><svg fill="#ffffff"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="24px" height="24px">
+                                <path
+                                    d="M 24.402344 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.402344 16.898438 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.902344 40.5 17.898438 41 24.5 41 C 31.101563 41 37.097656 40.5 40.597656 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.097656 35.5 C 45.5 33 46 29.402344 46.097656 24.902344 C 46.097656 20.402344 45.597656 16.800781 45.097656 14.300781 C 44.699219 12.101563 42.800781 10.5 40.597656 10 C 37.097656 9.5 31 9 24.402344 9 Z M 24.402344 11 C 31.601563 11 37.398438 11.597656 40.199219 12.097656 C 41.699219 12.5 42.898438 13.5 43.097656 14.800781 C 43.699219 18 44.097656 21.402344 44.097656 24.902344 C 44 29.199219 43.5 32.699219 43.097656 35.199219 C 42.800781 37.097656 40.800781 37.699219 40.199219 37.902344 C 36.597656 38.601563 30.597656 39.097656 24.597656 39.097656 C 18.597656 39.097656 12.5 38.699219 9 37.902344 C 7.5 37.5 6.300781 36.5 6.101563 35.199219 C 5.300781 32.398438 5 28.699219 5 25 C 5 20.398438 5.402344 17 5.800781 14.902344 C 6.101563 13 8.199219 12.398438 8.699219 12.199219 C 12 11.5 18.101563 11 24.402344 11 Z M 19 17 L 19 33 L 33 25 Z M 21 20.402344 L 29 25 L 21 29.597656 Z" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <a id="backToTopButton" href="#home">
+
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="#00856F" />
+            <path d="M20 27V13" stroke="white" stroke-width="2" sotroke-linecap="round" stroke-linejoin="round" />
+            <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round"
+                strole-linejoin="round" />
+        </svg>
+
+    </a>
+</body>
+
+</html>
